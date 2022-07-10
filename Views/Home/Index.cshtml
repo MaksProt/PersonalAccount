@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Главная";
+}
+
+<div class="text-center">
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Добро пожаловать в личный кабинет!</h1>
+      <p class="lead my-3">Здесь вы можете просмотреть недавние новости из жизни университета или узнать текущее расписание.</p>
+    </div>
+  </div>
+  <div class="p-2 p-md-3 mb-2"><h1>НОВОСТИ</h1></div>
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="~/img/news.jpg"/>
+        <h3 class="fw-normal">В добрый путь, выпускники - 2022!</h3>
+        <p>9 июля состоялась торжественная церемония вручения дипломов выпускникам Института педагогики, физической культуры, спорта и туризма.</p>
+        <p><a class="btn btn-secondary"asp-area="" asp-controller="Home" asp-action="NewsF">Подробнее</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img src="~/img/injeneer.jpg"/>
+        <h2 class="fw-normal">Будущее — за инженерами</h2>
+        <p>В Тульской области состоялся X Международный молодёжный промышленный форум «Инженеры будущего». Мероприятие проходило с 27 июня по 7 июля 2022 года на территории пансионата «Шахтер» в селе Бунырево. В нём приняли участие 1500 человек со всей страны, а также гости из 70 стран мира. Студенты и молодые учёные ТулГУ стали победителями форума.</p>
+        <p><a class="btn btn-secondary"asp-area="" asp-controller="Home" asp-action="NewsS">Подробнее</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img src="~/img/med.jpeg"/>
+        <h2 class="fw-normal">Есть ещё одно «золото» Универсиады!</h2>
+        <p>По итогам соревнований по спортивному ориентированию в Ульяновске и самбо в Грозном медальный зачёт VIII Всероссийской летней Универсиады пополнили студенты Тульского государственного университета.</p>
+        <p><a class="btn btn-secondary"asp-area="" asp-controller="Home" asp-action="NewsT">Подробнее</a></p>
+      </div>
+    </div>
+
+</div>

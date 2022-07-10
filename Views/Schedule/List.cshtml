@@ -1,0 +1,80 @@
+﻿@using PersonalAccount.Models
+@model IEnumerable<Schedule>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+
+        <h1>Расписание</h1>
+        @{
+            foreach(var sch in Model)
+            {
+                <div>
+                <h3>@sch.Day</h3>
+                    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Время</th>
+      <th scope="col">Аудитория</th>
+      <th scope="col">Дисциплина</th>
+      <th scope="col">Тип занятия</th>
+      <th scope="col">Преподаватель</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>"7.45 - 9.20"</td>
+      <td>@sch.Place1</td>
+      <td>@sch.Subject1</td>
+      <td>@sch.SubType1</td>
+      <td>@sch.Teacher1</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>"9.40 - 11.15"</td>
+      <td>@sch.Place2</td>
+      <td>@sch.Subject2</td>
+      <td>@sch.SubType2</td>
+      <td>@sch.Teacher2</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>"11.35 - 13.10"</td>
+      <td>@sch.Place3</td>
+      <td>@sch.Subject3</td>
+      <td>@sch.SubType3</td>
+      <td>@sch.Teacher3</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>"13.40 - 15.15"</td>
+      <td>@sch.Place4</td>
+      <td>@sch.Subject4</td>
+      <td>@sch.SubType4</td>
+      <td>@sch.Teacher4</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>"15.35 - 17.10"</td>
+      <td>@sch.Place5</td>
+      <td>@sch.Subject5</td>
+      <td>@sch.SubType5</td>
+      <td>@sch.Teacher5</td>
+    </tr>
+  </tbody>
+</table>
+                
+                </div>
+            }
+        }
+    </div>
+</body>
+</html>
